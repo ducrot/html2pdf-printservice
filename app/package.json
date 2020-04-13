@@ -1,0 +1,20 @@
+{
+  "name": "html2pdf-printservice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Print Service based on Puppeteer",
+  "main": "html2pdf.js",
+  "scripts": {
+    "test": "node html2pdf.js test"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "minimist": "^1.2.5",
+    "puppeteer": "^2.1"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/puppeteer": "^2.0.1"
+  }
+}

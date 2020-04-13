@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+    html2pdf:
+        build: .
+        restart: always
+        volumes:
+            - ./app:/app
+            - app/node_modules
