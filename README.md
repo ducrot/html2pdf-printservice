@@ -2,14 +2,24 @@
 
 Generates PDFs of Urls with [Puppeteer](https://github.com/puppeteer/puppeteer).
 
-## Installation
+## Install
 
 ```bash
-git clone git@github.com:ducrot/html2pdf-printservice.git
+git clone git@github.com:ducrot/html2pdf-printservice.git html2pdf-printservice
 cd $_
 
 # Prepare Docker (optional)
 docker-compose build
+```
+
+If puppeteer fails to start, install the [required dependencies](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md):
+ 
+```bash
+# Ubuntu
+sudo apt install -y gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+
+# CentOS 7
+yum install pango libXcomposite libXcursor libXdamage libXext libXi libXtst cups-libs libXScrnSaver libXrandr GConf2 alsa-lib atk gtk3 ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc
 ```
 
 
