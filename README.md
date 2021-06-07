@@ -6,7 +6,7 @@ Generates PDFs of Urls with [Puppeteer](https://github.com/puppeteer/puppeteer).
 
 ```bash
 git clone git@github.com:ducrot/html2pdf-printservice.git html2pdf-printservice
-cd $_
+cd html2pdf-printservice
 
 # Prepare Docker (optional)
 docker-compose build

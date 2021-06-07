@@ -8,13 +8,13 @@
     "test": "node html2pdf.js test"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "jsonwebtoken": "^8.5.1",
     "minimist": "^1.2.5",
-    "puppeteer": "^2.1"
+    "puppeteer": "^10.0.0"
   },
   "devDependencies": {
     "@types/minimist": "^1.2.0",
-    "@types/puppeteer": "^2.0.1"
+    "@types/puppeteer": "^5.4.3"
   }
 }

@@ -1,4 +1,4 @@
-FROM node:10-slim
+FROM node:14-slim
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
@@ -25,8 +25,9 @@ RUN apt-get update \
 
 # Install puppeteer so it's available in the container.
 WORKDIR /app
-COPY app/package*.json ./
-RUN npm i
+COPY app/package.json ./
+COPY app/yarn.lock ./
+RUN yarn
 COPY ./app .
 
 CMD [ "node", "html2pdf.js", "test" ]
